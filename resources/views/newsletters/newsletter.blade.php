@@ -60,7 +60,6 @@
                             <th>#</th>
                             <th>Heading</th>
                             <th>Title</th>
-                            <th>Image</th>
                             <th>Summary</th>
                             <th>Created_at</th>
                             <th id="action">Action</th>
@@ -70,7 +69,6 @@
                             <td>{{ $newsletter->id }}</td>
                             <td>{{ $newsletter->title }}</td>
                             <td>{{ $newsletter->sub_title }}</td>
-                            <td>{{ $newsletter->image }}</td>
                             <td>{{ $newsletter->summary }}</td>
                             <td>{{ $newsletter->created_at }}</td>
                             <td class="t-btn">

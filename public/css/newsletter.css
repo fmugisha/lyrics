@@ -181,7 +181,7 @@ body {
 
 .bg-admin .container {
     width: 100%;
-    height: 96%;
+    height: auto;
     margin-left: 3%;
     margin-top: 1.5%;
     padding: 1% 0;
@@ -237,7 +237,7 @@ th {
 td, th {
     border: 1px solid gray;
     font-size: 20px;
-    padding: 4px;
+    padding: 0.2rem;
     width: auto;
 }
 
@@ -247,7 +247,6 @@ td, th {
 
 #action {
     width: auto;
-    height: auto;
 }
 
 td a {
@@ -259,13 +258,13 @@ td a {
     flex-direction: column;
     padding: 0;
     margin: 0;
-    padding: 1rem 0.5rem;
+    padding: 100% 0.5rem;
 }
 
 .actionBtn {
     position: relative;
     color: #000;
-    margin: 2% 0;
+    margin: 0.2rem 0;
     padding: 1px;
     border-radius: 2px;
     font-size: 17px;
@@ -284,7 +283,6 @@ td a {
     background-color: rgba(220, 20, 60, 0.9);
     text-align: center;
     width: 100%;
-    height: 40%;
     height: auto;
 }
 
