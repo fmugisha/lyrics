@@ -46,9 +46,13 @@ class NewsletterController extends Controller
     {
         //$errors = ['error' => '', 'done' => ''];
 
+        $request->validate([
+            'image' => 'required|image|mimes:png,jfif,jpg,jpeg|max:2048'
+        ]);
+
         $file=$request->file("image");
-        $imageName=time().'_'.$file->getClientOriginalName();
-        $file->move(public_path("images") . $imageName);
+        $imageName=time().'_'.$file->extension();;
+        $file->move(\public_path("images/"),$imageName);
 
         $newsletter = new Newsletter([
             'image' => $imageName,

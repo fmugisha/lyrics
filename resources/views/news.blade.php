@@ -40,7 +40,7 @@
                 </header>
                 <div class="b-content">
                     <div class="title-news">
-                        <img src="/images/{{ $newsletter->image }}" class="img-title">
+                        <img src="/images/{{ $newsletter->image }}" class="img-title" alt="Newsletter image">
                         <div class="summary">
                             <strong>{{ $newsletter->sub_title }}</strong><p>{{ $newsletter->summary }}</p>
                         </div>
