@@ -51,7 +51,7 @@ class NewsletterController extends Controller
         ]);
 
         $file=$request->file("image");
-        $imageName=time().'_'.$file->extension();;
+        $imageName=time().'_'.$file->extension();
         $file->move(\public_path("images/"),$imageName);
 
         $newsletter = new Newsletter([
@@ -101,13 +101,17 @@ class NewsletterController extends Controller
     {
         $newsletter = Newsletter::where('id', $id)->first();
 
-        if (File::exists("image".$newsletter->image)) {
-            File::delete("image".$newsletter->image);
+        if (File::exists("images/".$newsletter->image)) {
+            File::delete("images/".$newsletter->image);
         }
 
+        $request->validate([
+            'image' => 'required|image|mimes:png,jfif,jpg,jpeg|max:2048'
+        ]);
+
         $file=$request->file("image");
-        $newsletter->image=time()."_".$file->getClientOriginalName();
-        $file->move(public_path("image"),$newsletter->image);
+        $newsletter->image=time()."_".$file->extension();
+        $file->move(\public_path("images/"),$newsletter->image);
         $request['image']=$newsletter->image;
 
         $title = $request->title;
@@ -127,8 +131,14 @@ class NewsletterController extends Controller
      * @param  \App\Models\Newsletter  $newsletter
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Newsletter $newsletter)
+    public function destroy($id)
     {
-        //
+        $image = Newsletter::findOrFail($id)->image;
+        if (File::exists('images/'.$image)) {
+            File::delete('images/' . $image);
+        }
+
+        Newsletter::find($id)->delete();
+        return redirect()->route('newsletters.newsletter');
     }
 }
