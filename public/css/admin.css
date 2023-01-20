@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.navbar {
+    position: fixed;
+    width: 16%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #4e73df;
+    z-index: 1;
+    box-shadow: 0 0 5px 0;
+}
+
+#logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+#lg-name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+.hrline {
+    width: 11rem;
+    margin-left: 1.2rem;
+    height:1px;
+    border-width:0;
+    color:rgba(255, 255, 255, 0.2);
+    background-color:rgba(255, 255, 255, 0.2);
+}
+
+.navline {
+    margin-left: 0 !important;
+}
+
+.lg {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    max-width: 3vw;
+}
+
+.navbar .ad-pro {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 5% 0;
+    width: 60%;
+    transform: translateX(30%);
+}
+
+.ad-pro .ad-name {
+    padding: 5% 0;
+    transform: translateX(30%);
+    font-size: 20px;
+}
+
+.logo {
+    display: flex;
+    margin: 5%;
+}
+
+.logo a {
+    padding-left: 5%;
+}
+
+.navbar .h-site {
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+.navbar ul li, .h-site {
+    padding: 1rem 0;
+}
+
+.navbar .h-site img {
+    position: absolute;
+    width: 8%;
+    height: auto;
+    color: #000;
+    animation: arr-display 0.8s infinite;
+}
+
+.navbar .h-site a {
+    margin-left: 15%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul {
+    width: 80%;
+    height: 80%;
+    margin: 0 10%;
+    padding: 4% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar .ad-icon {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.user {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 12rem;
+    height: 6rem;
+    padding: 1rem;
+    margin-left: 1.2rem;
+    border-radius: 5px;
+}
+
+.user .user-name {
+    font-weight: 600;
+}
+
+.footer {
+    color: #fff;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+
+.bg-admin {
+    margin-left: 25rem;
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 3rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.dash {
+    font-size: 1.5rem;
+    font-weight: 400;
+}

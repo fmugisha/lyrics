@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 25px;
+  border: 5px solid #E9EAED !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E9EAED !important;
+}
+
+a {
+  color: #000 !important;
+  text-decoration: underline;
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  position: relative;
+  left: 0;
+  right: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  display: flex !important;
+  justify-content: space-between;
+  padding: 1rem 10rem;
+}
+nav a {
+  outline: none;
+  text-decoration: none;
+}
+
+.b_nav {
+  opacity: 0.2;
+  color: #000 !important;
+}
+
+.b_nav:hover {
+  opacity: 1;
+  color: #fff !important;
+}
+
+nav .b-line {
+  opacity: 0.2;
+  color: #000 !important;
+}
+
+#logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#lg-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.copy {
+  color: #000 !important;
+  opacity: 0.4;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+section {
+  margin-top: 3rem;
+}
+
+.b-container {
+  width: 60%;
+  background-color: #fff;
+  margin-left: 20%;
+  margin-bottom: 1.5rem;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.b-container header {
+  padding-top: 1rem;
+}
+
+.b-container h1 {
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.article {
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  text-align: center;
+}
+
+.title-news {
+  display: flex;
+  padding: 0 6rem;
+}
+
+.img-title, .summary {
+  width: 50%;
+}
+
+.summary {
+  padding-left: 1.5rem;
+}
+
+.summary strong {
+  font-size: 1.2rem;
+}
+
+.aurthor {
+  padding-top: 2rem;
+}
+
+.aurthor span {
+  font-weight: 600;
+}

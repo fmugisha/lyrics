@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.register {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.register-form h1 {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: 300;
+    opacity: 0.4;
+}
+
+#logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+#lg-name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+.register-form {
+    width: 40%;
+    margin: 2rem 0;
+    transform: translateX(80%);
+    align-self: center;
+    background-color: rgba(162, 221, 211, 0.404);
+    border-radius: 10px;
+}
+
+.register-form form {
+    padding: 1.5rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.names {
+    display: flex;
+}
+
+.name1 {
+    width: 50%;
+}
+
+.name2 {
+    width: 50%;
+    margin-left: 5rem;
+}
+
+.register-form form label {
+    padding-top: 1rem;
+    padding-top: 1rem;
+}
+
+.register-form form input{
+    height: 2.1rem;
+    padding-left: 1rem;
+    font-size: 15px;
+    outline: none;
+    color: gray;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.register-btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.register-btn a {
+    font-size: 1rem;
+}
+
+.register-btn button {
+    position: relative;
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #000;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    align-self: center;
+}
+
+.register-btn button span {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.register-btn button:hover span {
+    width: 100%;
+}
+
+.register-btn button:hover {
+    border: none;
+}
+
+.register-form .register-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.register-form .register-btn button {
+    color: #000;
+}
+
+.register-form .register-btn button:hover {
+    color: #fff;
+}
+
+.register-form .lg {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    max-width: 5%;
+    margin-right: 2%;
+}
+
+.lg-msg {
+    display: none;
+    text-align: center;
+    padding-top: 2%;
+    color: rgba(0, 128, 0, 0.678);
+}

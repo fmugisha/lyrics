@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.login {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.login-form h1 {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: 300;
+    opacity: 0.4;
+}
+
+#logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+#lg-name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+.login-form {
+    width: 40%;
+    margin-top: 14%;
+    transform: translateX(80%);
+    align-self: center;
+    background-color: rgba(162, 221, 211, 0.404);
+    border-radius: 10px;
+}
+
+.login-form form {
+    padding: 2% 8%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.login-form form label {
+    padding-top: 1rem;
+}
+
+.login-form form input{
+    height: 3rem;
+    padding-left: 2%;
+    font-size: 15px;
+    outline: none;
+    color: gray;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.login-btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login-btn a {
+    font-size: 1rem;
+}
+
+.login-btn button {
+    position: relative;
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #000;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    align-self: center;
+}
+
+.login-btn button span {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.login-btn button:hover span {
+    width: 100%;
+}
+
+.login-btn button:hover {
+    border: none;
+}
+
+.login-form .login-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form .login-btn button {
+    color: #000;
+}
+
+.login-form .login-btn button:hover {
+    color: #fff;
+}
+
+.login-form .lg {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    max-width: 5%;
+    margin-right: 2%;
+}
+
+.lg-msg {
+    display: none;
+    text-align: center;
+    padding-top: 2%;
+    color: rgba(0, 128, 0, 0.678);
+}
