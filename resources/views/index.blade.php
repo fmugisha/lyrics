@@ -36,7 +36,7 @@
             <div class="masthead-content text-white">
                 <div class="container-fluid px-4 px-lg-0">
                     <h1 class="fst-italic lh-1 mb-4">we bring you lyrics of hit songs!</h1>
-                    <p class="mb-5">We work hard to bring the hit songs' lyrics to let follow the beat. Sign up below to receive updates and to be notified when we brings you another hit or get our newsletter!</p>
+                    <p class="mb-5">We work hard to bring the hit songs' lyrics to let you follow the beat. Sign up below to receive updates and to be notified when we brings you another hit or get our newsletter!</p>
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <div class="row input-group-newsletter">
                             <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>

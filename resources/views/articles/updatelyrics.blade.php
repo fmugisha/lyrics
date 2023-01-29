@@ -12,41 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Raleway:wght@100;800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="navbar">
-            <div class="logo">
-                <span id="logo">
-                    <span id="lg-name">Babu</span>Lyrics
-                </span>
-            </div>
-            <div>
-                <hr class="hrline">
-            </div>
-            <div class="h-site">
-                <a href="{{ route('index') }}">View site</a>
-            </div>
-            <ul>
-                <li><a href="{{ route('admin') }}">Dashboard</a></li>
-                <hr class="hrline navline">
-                <li><a href="{{ route('songs.song') }}">Songs</a></li>
-                <hr class="hrline navline">
-                <li><a href="{{ route('articles.lyrics') }}">Articles</a></li>
-                <hr class="hrline navline">
-                <li><a href="{{ route('newsletters.newsletter') }}">Newsletter</a></li>
-                <hr class="hrline navline">
-                <li><a href="#">Messages</a></li>
-                <hr class="hrline navline">
-                <li><a href="{{ route('accounts.user') }}">Users</a></li>
-                <hr class="hrline navline">
-                <li><a href="#">Logout</a></li>
-            </ul>
-            <div class="user">
-                <p class="user-title">Logged In By:</p>
-                <p class="user-name">Mugisha Fred</p>
-            </div>
-            <div class="footer">Copyright 
-                &copy;<script>document.write(new Date().getFullYear())</script>. BabuLyrics
-            </div>
-        </div>
+        @include('navbar/navbar')
         <div class="bg-admin">
             <div class="container bk-form" id="table-container">
                 <a href="{{ route('articles.lyrics') }}" class="bk-btn" id="bk-id">&times;</a>
@@ -68,7 +34,7 @@
                     <input type="text" name="address" id="bimg" value="{{ $article->song_address }}" class="song-address" readonly>
                     <label for="bdesc">Song Lyrics</label>
                     <textarea type="text" name="lyrics" id="bdesc" class="article">{{ $article->lyrics }}</textarea>
-                    <input type="number" name="songid" id="songid" value="{{ $article->song_id }}" class="song-id" readonly>
+                    <input type="number" name="songid" id="songid" value="{{ $article->song_id }}" class="song-id" hidden>
                     @foreach($errors as $error)
                         <p class="sbt-msg">{{ $error }}</p>
                     @endforeach

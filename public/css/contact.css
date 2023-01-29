@@ -105,3 +105,12 @@ form textarea {
 .center {
   padding: 0.5rem 0;
 }
+
+.btn {
+  background-color: #9e9e9e93 !important;
+}
+
+.btn:hover {
+  color: rgba(255, 255, 255, 0.7)!important;
+  background-color: #26a699af !important;
+}

@@ -42,7 +42,7 @@ body {
 
 .register-form {
     width: 40%;
-    margin: 2rem 0;
+    margin: 1rem 0;
     transform: translateX(80%);
     align-self: center;
     background-color: rgba(162, 221, 211, 0.404);
@@ -70,8 +70,7 @@ body {
 }
 
 .register-form form label {
-    padding-top: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 
 .register-form form input{
@@ -151,8 +150,8 @@ body {
 }
 
 .lg-msg {
-    display: none;
     text-align: center;
-    padding-top: 2%;
-    color: rgba(0, 128, 0, 0.678);
+    padding-top: 0.1rem;
+    color: red;
+    font-size: 1rem;
 }
