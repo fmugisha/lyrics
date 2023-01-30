@@ -44,7 +44,7 @@ class UserController extends Controller
                 return redirect('dashboard');
             } else {
                 $errors['passw'] = 'Wrong password!';
-                return view('accounts.login', compact('errors'));
+                return redirect()->back()->withInput()->with(['errors' => $errors]);
             }
         } else {
             $errors['mail'] = 'This user is not registered';
@@ -86,13 +86,13 @@ class UserController extends Controller
 
         if ($user_email) {
             $errors['email'] = 'This email is taken!';
-            return view('accounts.register', compact('errors'));
+            return redirect()->back()->withInput()->with(['errors' => $errors]);
         } elseif ($user_uname) {
             $errors['username'] = 'This username is taken!';
-            return view('accounts.register', compact('errors'));
+            return redirect()->back()->withInput()->with(['errors' => $errors]);
         } elseif ($request->password != $request->passw2) {
             $errors['passw'] = 'Passwords are not match!';
-            return view('accounts.register', compact('errors'));
+            return redirect()->back()->withInput()->with(['errors' => $errors]);
         }
 
         $user = new User([

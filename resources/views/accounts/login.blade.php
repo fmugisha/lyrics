@@ -20,7 +20,7 @@
                     @csrf
 
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder="ex: info@babusoft.rw">
+                    <input type="text" name="email" id="email" value="{{ old('email') }}" placeholder="ex: info@babusoft.rw">
                     <label for="passw">Password</label>
                     <input type="password" name="password" id="passw" placeholder="Password">
                     @foreach ($errors as $error)

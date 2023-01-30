@@ -23,19 +23,19 @@
                     <div class="names">
                         <div class="name1 rname">
                             <label for="fname">First Name</label><br>
-                            <input type="text" name="fname" id="fname" placeholder="ex: Alex" required>
+                            <input type="text" name="fname" id="fname" value="{{ old('fname') }}" placeholder="ex: Alex" required>
                         </div>
                         <div class="name2 rname">
                             <label for="sname">Second Name</label><br>
-                            <input type="text" name="sname" id="sname" placeholder="ex: NJUGA">
+                            <input type="text" name="sname" id="sname" value="{{ old('sname') }}" placeholder="ex: NJUGA">
                         </div>
                     </div>
                     <label for="uname">Username</label>
-                    <input type="text" name="uname" id="uname" placeholder="username of your choice" required>
+                    <input type="text" name="uname" id="uname" value="{{ old('uname') }}" placeholder="username of your choice" required>
                     <label for="pname">Phone Number</label>
-                    <input type="text" name="phone_number" id="pname" placeholder="+250783746330">
+                    <input type="text" name="phone_number" id="pname" value="{{ old('phone_number') }}" placeholder="+250783746330">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="ex: info@babusoft.rw" required>
+                    <input type="email" name="email" id="email" value="{{ old('email') }}" placeholder="ex: info@babusoft.rw" required>
                     <label for="passw">Password</label>
                     <input type="password" name="password" id="passw" placeholder="Password" required>
                     <label for="passw2">Confirm Password</label>
