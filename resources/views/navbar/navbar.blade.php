@@ -1,4 +1,19 @@
         <style>
+            ::-webkit-scrollbar {
+                width: 25px;
+                height: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: rgba(78, 114, 223, 0.5);
+                border-radius: 25px;
+                border: 7px solid #fff !important;
+            }
+
             .navbar {
                 position: fixed;
                 width: 16%;
@@ -28,10 +43,10 @@
             .hrline {
                 width: 11rem;
                 margin-left: 1.2rem;
-                height:1px;
-                border-width:0;
-                color:rgba(255, 255, 255, 0.2);
-                background-color:rgba(255, 255, 255, 0.2);
+                height: 1px;
+                border-width: 0;
+                color: rgba(255, 255, 255, 0.2);
+                background-color: rgba(255, 255, 255, 0.2);
             }
 
             .navline {
@@ -45,7 +60,7 @@
                 max-width: 3vw;
             }
 
-             .navbar .ad-pro {
+            .navbar .ad-pro {
                 display: flex;
                 flex-direction: column;
                 justify-self: center;
@@ -85,7 +100,8 @@
                 margin-left: 20%;
             }
 
-            .navbar ul li, .h-site {
+            .navbar ul li,
+            .h-site {
                 padding: 1rem 0;
             }
 
@@ -171,25 +187,32 @@
                 <a href="{{ route('index') }}">View site</a>
             </div>
             <ul>
-                <li><a href="{{ route('dashboard') }}" id="ad-dash"><img src="/assets/dashboard.png" class="icon"/>Dashboard</a></li>
+                <li><a href="{{ route('dashboard') }}" id="ad-dash"><img src="/assets/dashboard.png"
+                            class="icon" />Dashboard</a></li>
                 <hr class="hrline navline">
-                <li><a href="{{ route('songs.song') }}"><img src="/assets/song.png" class="icon"/>Songs</a></li>
+                <li><a href="{{ route('songs.song') }}"><img src="/assets/song.png" class="icon" />Songs</a></li>
                 <hr class="hrline navline">
-                <li><a href="{{ route('articles.lyrics') }}"><img src="/assets/article.png" class="icon"/>Articles</a></li>
+                <li><a href="{{ route('articles.lyrics') }}"><img src="/assets/article.png"
+                            class="icon" />Articles</a></li>
                 <hr class="hrline navline">
-                <li><a href="{{ route('newsletters.newsletter') }}"><img src="/assets/newsletter.png" class="icon"/>Newsletter</a></li>
+                <li><a href="{{ route('newsletters.newsletter') }}"><img src="/assets/newsletter.png"
+                            class="icon" />Newsletter</a></li>
                 <hr class="hrline navline">
-                <li><a href="#"><img src="/assets/messages.png" class="icon"/>Messages</a></li>
+                <li><a href="#"><img src="/assets/messages.png" class="icon" />Messages</a></li>
                 <hr class="hrline navline">
-                <li><a href="{{ route('accounts.user') }}"><img src="/assets/users.png" class="icon"/>Users</a></li>
+                <li><a href="{{ route('accounts.user') }}"><img src="/assets/users.png" class="icon" />Users</a></li>
                 <hr class="hrline navline">
-                <li><a href="{{ route('accounts.signout') }}"><img src="/assets/logout.png" class="icon"/>Logout</a></li>
+                <li><a href="{{ route('accounts.signout') }}"><img src="/assets/logout.png" class="icon" />Logout</a>
+                </li>
             </ul>
             <div class="user">
                 <p class="user-title">Logged In By:</p>
                 <p class="user-name">{{ auth()->user()->first_name }} {{ auth()->user()->second_name }}</p>
             </div>
-            <div class="footer">Copyright 
-                &copy;<script>document.write(new Date().getFullYear())</script>. BabuLyrics
+            <div class="footer">Copyright
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>. BabuLyrics
             </div>
         </div>

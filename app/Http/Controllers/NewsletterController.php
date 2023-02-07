@@ -6,6 +6,7 @@ use App\Models\Newsletter;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class NewsletterController extends Controller
 {
@@ -53,6 +54,7 @@ class NewsletterController extends Controller
         $file=$request->file("image");
         $imageName=time().'_'.$file->extension();
         $file->move(\public_path("images/"),$imageName);
+        $user = Auth::user()->first_name;
 
         $newsletter = new Newsletter([
             'image' => $imageName,
@@ -60,6 +62,7 @@ class NewsletterController extends Controller
             'sub_title' => $request->sub_title,
             'summary' => $request->summary,
             'description' => $request->description,
+            'created_by' => $user,
         ]);
             
         $newsletter->save();

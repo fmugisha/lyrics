@@ -47,7 +47,7 @@
                     </div>
                     <div class="article center">
                         <p class="lyrics-page">{{ $newsletter->description }}</p>
-                        <p class="center aurthor">Established by <span>Njuga</span></p>
+                        <p class="center aurthor">Established by <span>{{ $newsletter->created_by }}</span></p>
                     </div>
                 </div>
             </article>

@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Newsletter extends Model
 {
     use HasFactory;
-    protected $fillable = ['image', 'title', 'sub_title', 'summary', 'description', 'updated_at'];
+    protected $fillable = ['image', 'title', 'sub_title', 'summary', 'description', 'created_by', 'updated_at'];
 }

@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string("sub_title");
             $table->text("summary");
             $table->text("description");
+            $table->string("created_by");
             $table->timestamps();
         });
     }
